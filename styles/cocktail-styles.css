@@ -1,0 +1,14 @@
+figure{
+    padding: 2px;
+    text-align: center;
+}
+
+figcaption{
+    color: black;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
