@@ -10,38 +10,57 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/bootstrap-icons.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="styles/styles.css" rel="stylesheet"/>
 
 </head>
 
 <body>
 
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
     <!--Navbar-->
-    <nav class="navbar navbar-expand navbar-light bg-light">
-        <!-- Image and text home button-->
-        <a class="navbar-brand" href="#index.html">
-            <img src="./assets/placeholder.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            Restaurant
-        </a>
-        <div class="navbar" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="index.html">Home</a>
-                <a class="nav-item nav-link" href="menu.html">Menu</a>
-                <a class="nav-item nav-link" href="about.html">About</a>
-                <a class="nav-item nav-link" href="gallery.html">Gallery</a>
-                <a class="nav-item nav-link" href="contact.html">Contact</a>
-                <a class="nav-item nav-link" href="reserve.html">Reserve</a>
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">La Ratatouille <i class='bx bx-dish'></i></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="index.html#specials" class="nav__link">Menu</a></li>
+                    <li class="nav__item"><a href="index.html#gallery" class="nav__link">Gallery</a></li>
+                    <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact us</a></li>
+                    <li class="nav__item"><a href="" class="nav__link active-link">Reservation</a></li>
+
+                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                </ul>
             </div>
-        </div>
-    </nav>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
     <!--end navbar-->
 
     <h1>reserve</h1>
     
     <!--large iframe-->
-    <iframe src="https://tableagent.com/iframe/ratatouille/" style="border:0px none;min-width:375px;min-height:736px"
+
+    <section class="menu section bd-container" id="menu">
+        <h2 class="section-title">Make your own reservation!</h2>
+        <div class="maps" >
+            <iframe src="https://tableagent.com/iframe/ratatouille/" width="1250" height="500" style="border:0;"
         width="100%" height="100%">
     </iframe>
 
+        </div>
+
+    </section>
+   
     <!-- medium
         <iframe
             src="https://tableagent.com/iframe/ratatouille/v/medium/"
@@ -58,11 +77,14 @@
             width="100%"
             height="100%">
         </iframe>
-
     -->
     
     <!-- Bootstrap Bundle with Popper -->
     <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
