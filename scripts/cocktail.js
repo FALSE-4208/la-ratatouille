@@ -54,27 +54,23 @@ function getCocktail() {
             <div class="flex-container">
                 <figure>
                     <img src="${drinkArray1.strDrinkThumb}/preview"/>
-                    <figcaption>${drinkArray1.strDrink}</figcaption>
+                    <menu__detail>${drinkArray1.strDrink}</menu__detail>
                 </figure>
-
                 <figure>
                     <img src="${drinkArray2.strDrinkThumb}/preview"/>
-                    <figcaption>${drinkArray2.strDrink}</figcaption>
+                    <menu__detail>${drinkArray2.strDrink}</menu__detail>
                 </figure>
-
                 <figure>
                     <img src="${drinkArray3.strDrinkThumb}/preview"/>
-                    <figcaption>${drinkArray3.strDrink}</figcaption>
+                    <menu__detail>${drinkArray3.strDrink}</menu__detail>
                 </figure>
-
                 <figure>
                     <img src="${drinkArray4.strDrinkThumb}/preview"/>
-                    <figcaption>${drinkArray4.strDrink}</figcaption>
+                    <menu__detail>${drinkArray4.strDrink}</menu__detail>
                 </figure>
-
                 <figure>
                     <img src="${drinkArray5.strDrinkThumb}/preview"/>
-                    <figcaption>${drinkArray5.strDrink}</figcaption>
+                    <menu__detail>${drinkArray5.strDrink}</menu__detail>
                 </figure>
             </div>
             `;
