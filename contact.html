@@ -10,50 +10,93 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/bootstrap-icons.css">
+    <link href="styles/styles.css" rel="stylesheet"/>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 
 <body>
 
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+
     <!--Navbar-->
-    <nav class="navbar navbar-expand navbar-light bg-light">
-        <!-- Image and text home button-->
-        <a class="navbar-brand" href="#index.html">
-            <img src="./assets/placeholder.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            Restaurant
-        </a>
-        <div class="navbar" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="index.html">Home</a>
-                <a class="nav-item nav-link" href="menu.html">Menu</a>
-                <a class="nav-item nav-link" href="about.html">About</a>
-                <a class="nav-item nav-link" href="gallery.html">Gallery</a>
-                <a class="nav-item nav-link" href="contact.html">Contact</a>
-                <a class="nav-item nav-link" href="reserve.html">Reserve</a>
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">La Ratatouille <i class='bx bx-dish'></i></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="index.html#specials" class="nav__link">Menu</a></li>
+                    <li class="nav__item"><a href="index.html#gallery" class="nav__link">Gallery</a></li>
+                    <li class="nav__item"><a href="index.html#contact" class="nav__link active-link">Contact us</a></li>
+                    <li class="nav__item"><a href="index.html#contact" class="nav__link">Reservation</a></li>
+
+                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                </ul>
             </div>
-        </div>
-    </nav>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="menu section bd-container">
+        <h2 class="section-title">Contact us</h2>
+        <hr>
+        <form>
+            <div >
+                <div class="form-group mb-3">
+                    <label>Name :</label>
+                    <input class="form-control" type="text" id="name" placeholder="Name">
+                </div>
+                <div class="form-group mb-3">
+                    <label>Email :</label>
+                    <input class="form-control" type="email" id="email" placeholder="Email">
+                </div>
+                <div class="form-group mb-3">
+                    <label>Message :</label>
+                    <textarea class="form-control" rows="4" id="message" placeholder="Message"> </textarea>
+            </div>
+            <button class='button' id="submit"> Submit </button>
+        </form>
+    </div>
+
+
     <!--end navbar-->
 
-    <h1>contact</h1>
+    <!--<section class="menu section bd-container" id="menu">
+        <h2 class="section-title">Contact Us!</h2>
+        <div id='contact-form'>
+            <div>
+                <input type="text" id="name" placeholder="Name">
+            </div>
+            <div>
+                <input type="email" id="email" placeholder="Email">
+            </div>
+            <div>
+                <textarea rows="4" id="message" placeholder="Message"></textarea>
+            </div>
+            <button id="submit"> Submit </button>
+        </div>
+
+    </section>-->
+
     
-    <div id='contact-form'>
-        <div>
-            <input type="text" id="name" placeholder="Name">
-        </div>
-        <div>
-            <input type="email" id="email" placeholder="Email">
-        </div>
-        <div>
-            <textarea rows="4" id="message" placeholder="Message"></textarea>
-        </div>
-        <button id="submit"> Submit </button>
-    </div>
+    
     <script src='scripts/form-model.js'></script>
     <script src='scripts/form-controller.js'></script>
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
