@@ -290,6 +290,10 @@ img{
   transition: .3s;
 }
 
+.container-button{
+  text-align: center;  
+}
+
 .container22 {
     position: relative;
     text-align: center;
@@ -648,3 +652,4 @@ img{
         height: 640px;
     }
 }
+
